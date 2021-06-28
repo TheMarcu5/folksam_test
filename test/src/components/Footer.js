@@ -3,9 +3,10 @@ import React from 'react';
 function Footer() {
   return (
     <div className="App">
-      <h1>Footer</h1>
+      <h1>Footererer</h1>
     </div>
   );
 }
 
 export default Footer;
+ 

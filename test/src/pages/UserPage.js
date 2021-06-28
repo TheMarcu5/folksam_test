@@ -1,9 +1,9 @@
 import React from 'react';
 
-function UserPage() {
+function UserPage({match}) {
   return (
-    <div className="App">
-      <h1>Hej</h1>
+    <div className="USerPage">"
+      <h1>{match.url}</h1>
     </div>
   );
 }
