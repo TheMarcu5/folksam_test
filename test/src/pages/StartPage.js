@@ -26,7 +26,14 @@ function StartPage() {
         {users.map(user =>(
           
             <h1 key={user.id}>
-              <Link to={`/${user.id}`}>{user.name}</Link>
+              <Link to={{
+                  pathname: `/${user.id}`,
+                  state: {
+                    userName: user.name,    
+                  }
+                  
+                }}  
+                >{user.name}</Link>
             </h1>
           
         ))}
